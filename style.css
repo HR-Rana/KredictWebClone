@@ -1,0 +1,193 @@
+:root {
+    --primary: #ffb43c;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 5px 0px rgba(94, 104, 121) !important;
+}
+
+.nav-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav button {
+    background-color: #ffb43c;
+    color: white;
+    font-weight: 600;
+
+}
+
+nav button:hover {
+    background-color: #ff9d00;
+    color: white;
+    font-weight: 600;
+
+}
+
+nav ul li a:hover {
+    color: #ffb43c;
+}
+
+
+.hero-content-box .left-site-area::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 2px;
+    z-index: -5555;
+
+}
+
+.hero-content-box .left-site-area {
+    width: 35%;
+    position: relative;
+    overflow: hidden;
+    padding: 1px;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 20px;
+    border-bottom: 3px solid white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hero-content-box .left-site-area::before {
+    content: "";
+    width: 800px;
+    height: 900px !important;
+    background: linear-gradient(to bottom, white 50%, black 10%, transparent 40%);
+    /*background-color: white;*/
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+
+    position: absolute;
+    top: -25%;
+    left: -59%;
+    z-index: -22;
+    animation-name: rotated;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotated {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.hero-content-box .card-area {
+    width: 100%;
+    height: 99.5%;
+    margin: 0 auto;
+    background-color: black !important;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.Hero-area {
+    width: 90%;
+    margin: 45px auto;
+}
+
+
+
+#countdown {
+    width: 100%;
+    text-align: center;
+}
+
+#countdown ul {
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#countdown ul li {
+    width: 18%;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0px 0px 2px gray;
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#countdown ul li:not(:last-child):after {
+    content: ":";
+    position: absolute;
+    right: -18px;
+    top: -5px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card-body .buttons {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto;
+}
+
+.card-body .buttons button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.card-area .card-body img {
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card-body input{
+    background-color: transparent;
+    border: 1px solid #ff9d00;
+    padding:8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}

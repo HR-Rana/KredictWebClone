@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KREDICT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white">
+    <div class="navbar py-6 sticky">
+        <div class="nav-content flex justify-between">
+            <div class="logo w-[20%]">
+                <a href="index.html">
+                    <img class="w-[150px]" src="./Images/kredict-white.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu-area w-[80%] justify-end">
+                <nav class="menu gap-x-8 flex justify-end">
+                    <ul class="flex py-2 justify-between w-[50%] list-none text-white">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Token">Token</a></li>
+                        <li><a href="#Roadmap">Roadmap</a></li>
+                        <li><a href="#Team">Team</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                    <button class="text-white rounded-[10px] px-5 ">Connect Wallet</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="Hero-area">
+        <div class="container mx-auto ">
+            <div class="hero-content-box flex">
+                <div class="left-site-area">
+                    <div class="card-area bg-trasnparent py-5 px-3">
+                        <div class="card-top flex space-between">
+                            <div class="logo-left flex space-between">
+                                <img src="./Images/kredict-k.png" alt="logo" class="w-[70px]  p-2 border rounded-full">
+                                <span>
+                                    <h4 class="text-xl">KREDICT</h4>
+                                    <h6 class="text-sm">KDT / BNB</h6>
+                                    <small class="text-[#ff9d00]">View on Explorer</small>
+                                </span>
+                            </div>
+                            <div class="flex  flex-col gap-y-2">
+                                <button class="bg-trasnparent border p-1 uppercase text-sm">Audited</button>
+                                <button
+                                    class="bg-trasnparent border bg-white p-1 text-black uppercase text-sm">Verified</button>
+                            </div>
+                        </div>
+                        <div class="count-down-area">
+                            <div class="flex justify-between my-10 flex-wrap">
+                                <div id="countdown">
+                                    <ul class="flex">
+                                        <li class="w-[23.5%]"><span id="days"></span></li>
+                                        <li class="w-[23.5%]"><span id="hours"></span></li>
+                                        <li class="w-[23.5%]"><span id="minutes"></span></li>
+                                        <li class="w-[23.5%]"><span id="seconds"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-black-[#121212]">
+                            <p class="text-[14px] my-5 text-center">Your Wallet balance is 00 Bnb</p>
+                            <div class="buttons flex space-between">
+                                <button class="uppercase">
+                                    <img src="./Images/bnb.png" alt="">
+                                    BNB
+                                </button>
+                                <button class="uppercase">
+                                    <img src="./Images/usdt.png" alt="">
+                                    usdt
+                                </button>
+                                <button class="uppercase">
+                                    <img src="./Images/busd.png" alt="">
+                                    BUSD
+                                </button>
+                                <button class="uppercase">
+                                    <img src="./Images/usdc.png" alt="">
+                                    usdc
+                                </button>
+                            </div>
+
+                            <div>
+                                <input type="text" placeholder="exchange Quantity"
+                                    class="capitalize text-gray bg-none outline-none  w-full">
+                                <span class="w-full flex  justify-between my-2">
+                                    <button class="shadow-sm">10%</button>
+                                    <button class="shadow-sm">25%</button>
+                                    <button class="shadow-sm">50%</button>
+                                    <button class="shadow-sm">75%</button>
+                                    <button class="shadow-sm">100%</button>
+                                </span>
+
+                                <button class="w-full bg-gray-800 py-2 cursor-not-allowed text-gray font-[600]">Invalid
+                                    Amount</button><br>
+                                <button
+                                    class=" w-full my-2 uppercase py-2 cursor-not-allowed tracking-[3px] text-[#ffb43c] text-2xl font-[600]">1bnb
+                                    500kdt</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-site">
+                    <span>
+                        <img src="./Images/globe.gif" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/count-down.js"></script>
+</body>
+
+</html>
