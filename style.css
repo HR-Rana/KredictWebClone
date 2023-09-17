@@ -120,12 +120,12 @@ nav ul li svg {
     margin: 45px auto;
 }
 
-.Hero-area .logo-left img{
+.Hero-area .logo-left img {
     width: 70px;
     height: 70px;
-    border-right:3px solid #ffb031;
-    border-left:3px solid #ffb031;
-   
+    border-right: 3px solid #ffb031;
+    border-left: 3px solid #ffb031;
+
 }
 
 #countdown {
@@ -236,8 +236,45 @@ nav ul li svg {
 }
 
 .hero-img-content {
-    width: 80%;
+    width: 90%;
     backdrop-filter: blur(4px);
     position: absolute;
     padding: 35px;
+}
+
+
+
+.Presale-contact-address {
+    background: linear-gradient(to bottom, #eda839, #bc7401, black);
+    padding: 25px 10px;
+}
+
+
+
+.system-area {}
+
+.system-area svg {
+    font-size: 50px;
+    color: #ff9d00;
+    margin: 15px 0;
+}
+
+.system-area h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+
+
+
+.meet-future-kredict .right-site {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.meet-future-kredict h3{
+    width: 100%;
 }
