@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
 
 .navbar {
     width: 100%;
