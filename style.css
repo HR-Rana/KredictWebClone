@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;700&family=Maven+Pro:wght@400;500;600;700&display=swap');
+
+
+
+
+
 :root {
     --primary: #ffb43c;
 }
@@ -9,10 +15,39 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Maven Pro';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Geologica';
+}
+
+
+
+
 .container {
     width: 90%;
     margin: 0 auto;
 }
+
+/* common styles end..! */
+
+
+
+
+
+
+
+
+
+
+
 
 .navbar {
     width: 100%;
@@ -323,13 +358,13 @@ nav ul li svg {
 }
 
 
-footer .social-media div{
+footer .social-media div {
     display: flex;
     width: 75%;
     justify-content: space-between;
 }
 
-footer .social-media svg{
+footer .social-media svg {
     margin: 0px 5px;
     color: #ff9d00;
 }
