@@ -321,3 +321,15 @@ nav ul li svg {
     -webkit-background-clip: text;
     margin-bottom: 15px;
 }
+
+
+footer .social-media div{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+footer .social-media svg{
+    margin: 0px 5px;
+    color: #ff9d00;
+}
