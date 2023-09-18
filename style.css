@@ -32,8 +32,8 @@ h6 {
 
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+    width: 90% !important;
+    margin: 0 auto !important;
 }
 
 /* common styles end..! */
@@ -54,6 +54,7 @@ h6 {
     margin: 0 auto;
     position: sticky;
     top: 0;
+    z-index: 9999999999;
     box-shadow: 0px 0px 5px 0px rgba(94, 104, 121) !important;
 }
 
@@ -153,6 +154,8 @@ nav ul li svg {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
+
 
 .Hero-area {
     width: 90%;
@@ -290,7 +293,7 @@ nav ul li svg {
 
 
 
-.system-area {}
+
 
 .system-area svg {
     font-size: 50px;
@@ -367,4 +370,58 @@ footer .social-media div {
 footer .social-media svg {
     margin: 0px 5px;
     color: #ff9d00;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width:768px) {
+    .hero-content-box {
+        display: block;
+    }
+    .container{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .hero-content-box .left-site-area {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .right-site {
+        width: 90%;
+        height: 100%;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        margin: 25px 0;
+
+    }
+
+    .hero-img-content {
+        width: 100%;
+        padding: 15px;
+        backdrop-filter: blur(2px);
+    }
+
+    .hero-img-content h3 {
+        font-size: 28px;
+        color: #ffb031;
+    }
+
+    .right-site .globe-img {
+        width: 100%;
+        transform: translateY(0px);
+    }
+
+    .right-site .globe-img img {
+        transform: scale(1.0);
+        z-index: -3333;
+    }
 }
