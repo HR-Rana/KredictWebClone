@@ -29,7 +29,10 @@ h6 {
 }
 
 
-
+img {
+    height: 100%;
+    object-fit: contain;
+}
 
 .container {
     width: 90% !important;
@@ -159,6 +162,7 @@ nav ul li svg {
 
 .Hero-area {
     width: 90%;
+    height: 100%;
     margin: 45px auto;
 }
 
@@ -252,7 +256,8 @@ nav ul li svg {
     align-items: center;
     position: relative;
     justify-content: center;
-
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .right-site .globe-img {
@@ -376,6 +381,36 @@ footer .social-media svg {
 
 
 
+@media (max-width:1024px) {
+    .Hero-area .right-site {
+        width: 100%;
+    }
+
+    .hero-content-box .left-site-area {
+        width: 90% !important;
+        margin: 20px auto;
+    }
+
+    .hero-content-box .left-site-area::before {
+        width: 1200px;
+        height: 1200px !important;
+        top: -50%;
+        left: -25%;
+        z-index: -22;
+    }
+
+    .right-site .globe-img {
+        width: 100%;
+        transform: translateY(45px);
+    }
+
+    .right-site .globe-img img {
+        transform: scale(1.0) !important;
+        z-index: -3333;
+    }
+
+}
+
 
 
 
@@ -385,23 +420,31 @@ footer .social-media svg {
     .hero-content-box {
         display: block;
     }
-    .container{
+
+    img {
+        margin: 25px 0;
+    }
+
+    .container {
         width: 96%;
         margin: 0 auto;
     }
+
+    .hero-content-box .left-site-area::before {
+        width: 800px;
+        height: 1000px !important;
+        top: -20%;
+        left: -26%;
+        z-index: -22;
+    }
+
     .hero-content-box .left-site-area {
-        width: 90%;
+        width: 90% !important;
         margin: 20px auto;
     }
 
-    .right-site {
-        width: 90%;
-        height: 100%;
-        align-items: center;
-        position: relative;
-        justify-content: center;
-        margin: 25px 0;
-
+    .Hero-area .right-site {
+        width: 90% !important;
     }
 
     .hero-img-content {
@@ -415,13 +458,37 @@ footer .social-media svg {
         color: #ffb031;
     }
 
+    .right-site {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
     .right-site .globe-img {
         width: 100%;
         transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
     }
 
     .right-site .globe-img img {
-        transform: scale(1.0);
+        transform: scale(1.0) !important;
         z-index: -3333;
+        -webkit-transform: scale(1.0) !important;
+        -moz-transform: scale(1.0) !important;
+        -ms-transform: scale(1.0) !important;
+        -o-transform: scale(1.0) !important;
+    }
+
+    .Whitepaper-section button {
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    footer .social-media div {
+        width: 95%;
+       
     }
 }
