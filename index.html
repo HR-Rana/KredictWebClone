@@ -13,49 +13,63 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="navbar py-6 sticky bg-black z-[999]">
-        <div class="nav-content flex justify-between">
-            <div class="logo  w-[20%]">
+    <div class="navbar py-0 md:py-6 sticky bg-black z-[999]">
+        <div class="nav-content block md:flex justify-between">
+            <div class="logo w-[120px] md:w-[20%]">
                 <a href="index.html" class="h-[100%] flex items-center">
-                    <img class="w-[150px]" src="./Images/kredict-white.png" alt="logo">
+                    <img class="w-[150px] " src="./Images/kredict-white.png" alt="logo">
                 </a>
             </div>
-            <div class="menu-area w-[80%] justify-end">
-                <nav class="menu gap-x-8 flex justify-end">
-                    <ul class="flex py-2 justify-between w-[50%] list-none text-white">
+            <div class="menu-area h-[100%] items-center flex md:block md:w-[75%] lg:w-[60%]  justify-end">
+                <nav class="menu w-[100%] gap-8 gap-x-8 flex-row md:flex justify-end">
+                    <ul
+                        class="block mx-auto md:mx-none  md:flex py-2  justify-between h-[100] items-center w-[100%]  list-none text-white">
                         <li><a href="#About"> <i class="fa-solid fa-circle-info"></i> About</a></li>
                         <li><a href="#Token"><i class="fa-regular fa-circle-stop"></i> Token</a></li>
                         <li><a href="#Roadmap"><i class="fa-solid fa-map-pin"></i> Roadmap</a></li>
                         <li><a href="#Team"> <i class="fa-solid fa-user-large"></i> Team</a></li>
                         <li><a href="#Contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
                     </ul>
-                    <button class="text-white rounded-[10px] px-5 ">Connect Wallet</button>
+                    <button class="text-white mb-2 md:mb-0 p-2 sm:w-[30%] md:w-[35%] rounded-[10px] px-5 ">Connect
+                        Wallet</button>
                 </nav>
             </div>
+
+            <span class="menu-icon">
+                <span>
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <span class="times">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </span>
         </div>
     </div>
 
 
 
-    <section class="Hero-area  p-5 md:p-0">
+    <section class="Hero-area w-[100%] h-full p-0 md:p-0">
         <div class="">
             <div class="hero-content-box block sm:block  lg:flex">
                 <div class="left-site-area none  mx-auto">
-                    <div class="card-area  p-5 px-3">
-                        <div class="card-top flex">
-                            <div class="logo-left w-full flex space-between">
-                                <img src="./Images/kredict-k.png" alt="logo"
-                                    class="w-[70px] mr-3  p-2 border rounded-full">
-                                <span>
-                                    <h4 class="text-xl">KREDICT</h4>
+                    <div class="card-area p-5 px-3">
+                        <div class="card-top justify-between flex">
+                            <div class="logo-left w-[50%]  flex items-center space-between">
+                                <span class=" 0">
+                                    <img src="./Images/kredict-k.png" alt="logo"
+                                        class=" w-[10px] md:w-[70px] mr-3  p-2 border rounded-full">
+                                </span>
+                                <span class="w-[50%]">
+                                    <h4 class="text-sm md:text-xl">KREDICT</h4>
                                     <h6 class="text-sm">KDT / BNB</h6>
                                     <small class="text-[#ff9d00]">View on Explorer</small>
                                 </span>
                             </div>
-                            <div class="flex  flex-col gap-y-2">
-                                <button class="bg-trasnparent border p-1 uppercase text-sm">Audited</button>
+                            <div class="flex flex-col justify-center w-[22%]   gap-y-2">
                                 <button
-                                    class="bg-trasnparent border bg-white p-1 text-black uppercase text-sm">Verified</button>
+                                    class="bg-trasnparent border p-1 uppercase text-[11px] sm:text-sm">Audited</button>
+                                <button
+                                    class="bg-trasnparent border bg-white p-1 text-black uppercasem text-[11px] sm:text-sm">Verified</button>
                             </div>
                         </div>
                         <div class="count-down-area">
@@ -134,12 +148,13 @@
                     </div>
                     <div class="hero-img-content">
                         <h3 class="text-white font-[700] text-5xl uppercase text-[#eda839] ">KREDICT Presale Launch</h3>
-                        <p class="coverText my-4">Kredict is a decentralized launchpad that allows users to launch their
+                        <p class="coverText my-2 md:my-4">Kredict is a decentralized launchpad that allows users to
+                            launch their
                             token and create their initial token sale with staking benefits to their holders and they
                             don't require any Coding Knowledge For this.</p>
 
                         <div class="text-black font-[500]">
-                            <button class="bg-[#eda839] p-2 rounded-md my-5 mr-2 w-[35%]">Whitepaper</button>
+                            <button class="bg-[#eda839] p-2 rounded-md my-2 md:y-5 mr-2 w-[35%]">Whitepaper</button>
                             <button class="bg-[#eda839] p-2 rounded-md my-2 mr-2 w-[20%]">DEX</button>
                         </div>
                     </div>
@@ -149,7 +164,7 @@
     </section>
 
 
-    <section class="Presale-contact-address p-5 my-8 ">
+    <section class="Presale-contact-address p-5 my-4 md:my-8 ">
         <div class=" container text-center">
             <p>You can buy KDT also by sending BNB directly to Presale Contract Address</p>
             <div
@@ -186,15 +201,15 @@
     </section>
 
 
-    <section class="meet-future-kredict  p-5 md:p-0 my-[100px]">
+    <section class="meet-future-kredict p-5 md:p-0 my-[50px] lg:my-[100px]">
         <div class="container">
-            <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
                 <div class="left-site">
-                    <img src="./Images/about.gif" class="w-[70%] mx-auto" alt="about img">
+                    <img src="./Images/about.gif" class="mb-[20px] md:mb-[0px] w-[70%] mx-auto" alt="about img">
                 </div>
 
                 <div class="right-site">
-                    <h3 class="text-3xl text-left">Meet Future KREDICT</h3>
+                    <h3 class="text-2xl sm:text-3xl md:text-3xl text-left">Meet Future KREDICT</h3>
                     <p class="my-3">We will strive to make KREDICTChain as one of the prominent way Blockchain will be
                         used in different areas of business and economy as well as social welfare and other major areas
                         of technology</p>
@@ -213,17 +228,17 @@
 
     <section class="future-product  p-5 md:p-0">
         <div class="container">
-            <h3 class="text-center text-3xl font-[600] text-gray-300 my-5">Future Products</h3>
-            <div class="grid w-full my-10 list-none justify-between grid-cols-1 md:grid-cols-3">
-                <div class="grid w-[100%]  gap-2">
+            <h3 class="text-left md:text-center text-3xl font-[600] text-gray-300 my-5">Future Products</h3>
+            <div class="grid w-full my-10 list-none justify-between grid-cols-1 gap-5 md:gap-0 md:grid-cols-3">
+                <div class="grid w-[100%] gap-2">
                     <li><span><i class="fa-solid mr-3 fa-star"></i>P2P Exchange</span></li>
                     <li><span><i class="fa-solid mr-3 fa-star"></i>Online Education Platform</span></li>
                 </div>
-                <div class="grid justify-center w-[100%] gap-2">
+                <div class="grid justify-start md:justify-center w-[100%] gap-2">
                     <li><span><i class="fa-solid mr-3 fa-star"></i>Defi Exchange</span></li>
                     <li><span><i class="fa-solid mr-3 fa-star"></i>Decentralized Marketplace for Products</span></li>
                 </div>
-                <div class="grid w-[100%] justify-end gap-2">
+                <div class="grid w-[100%] justify-start md:justify-end gap-2">
                     <li><span><i class="fa-solid mr-3 fa-star"></i>NFT Marketplace</span></li>
                     <li><span><i class="fa-solid mr-3 fa-star"></i>Payment Wallet</span></li>
                 </div>
@@ -232,7 +247,7 @@
     </section>
 
 
-    <section class="vision-and-mission  p-5 md:p-0 my-[150px]">
+    <section class="vision-and-mission  p-5 md:p-0 my-[50px] md:my-[150px]">
         <div class="container">
             <h4 class="text-3xl my-3">Vision and Mission</h4>
             <div class="grid grid-cols-1 md:grid-cols-2">
@@ -264,11 +279,11 @@
             </div>
 
 
-            <div class="bottom-content mt-[100px] list-none">
+            <div class="bottom-content  mt-[100px] list-none">
                 <div class="grid gird-cols-1 gap-3 md:grid-cols-2">
                     <div class="content  flex">
                         <li class="flex h-[100%] items-center text-6xl text-[#eda839]"><i
-                                class="fa-solid fa-caret-left w-[50px]"></i></li>
+                                class="fa-solid fa-caret-left w-[35px] md:w-[50px]"></i></li>
                         <div>
                             <h5 class="text-xl my-2">HIGH SPEED AND LOW COSTS</h5>
                             <p class="text-gray-400">Immediate funding without third-parties. Smart contracts
@@ -278,7 +293,7 @@
                     </div>
                     <div class="content flex">
                         <li class="flex h-[100%] items-center text-6xl text-[#eda839]"><i
-                                class="fa-solid fa-caret-left w-[50px]"></i></li>
+                                class="fa-solid fa-caret-left w-[35px] md:w-[50px]"></i></li>
                         <div>
                             <h5 class="text-xl my-2">HIGH SPEED AND LOW COSTS</h5>
                             <p class="text-gray-400">Transactions are verified by distributed nodes, and anyone can join
@@ -288,7 +303,7 @@
                     </div>
                     <div class="content flex">
                         <li class="flex h-[100%] items-center text-6xl text-[#eda839]"><i
-                                class="fa-solid fa-caret-left w-[50px]"></i></li>
+                                class="fa-solid fa-caret-left w-[35px] md:w-[50px]"></i></li>
                         <div>
                             <h5 class="text-xl my-2">FAIR DEALS ONLY</h5>
                             <p class="text-gray-400">Open-source smart contract ensures fair and transparent deals
@@ -297,7 +312,7 @@
                     </div>
                     <div class="content  flex">
                         <li class="flex h-[100%] items-center text-6xl text-[#eda839]"><i
-                                class="fa-solid fa-caret-left w-[50px]"></i></li>
+                                class="fa-solid fa-caret-left w-[35px] md:w-[50px]"></i></li>
                         <div>
                             <h5 class="text-xl my-2">EASY ENTRY AND FAIR COMPETITION</h5>
                             <p class="text-gray-400">Any one can join, and Fair for everyone without any partiality</p>
@@ -305,7 +320,7 @@
                     </div>
                     <div class="content  flex">
                         <li class="flex h-[100%] items-center text-6xl text-[#eda839]"><i
-                                class="fa-solid fa-caret-left w-[50px]"></i></li>
+                                class="fa-solid fa-caret-left w-[35px] md:w-[50px]"></i></li>
                         <div>
                             <h5 class="text-xl my-2">PROTECTION FROM HACKING</h5>
                             <p class="text-gray-400">On a decentralized platform, all user accounts are independent; if
@@ -314,7 +329,7 @@
                     </div>
                     <div class="content  flex">
                         <li class="flex h-[100%] items-center text-6xl text-[#eda839]"><i
-                                class="fa-solid fa-caret-left w-[50px]"></i></li>
+                                class="fa-solid fa-caret-left w-[35px] md:w-[50px]"></i></li>
                         <div>
                             <h5 class="text-xl my-2">GLOBAL P2P TRADE FINANCING</h5>
                             <p class="text-gray-400">The peer-to-peer architecture of blockchain allows all
@@ -324,7 +339,7 @@
                     </div>
                     <div class="content  flex">
                         <li class="flex h-[100%] items-center text-6xl text-[#eda839]"><i
-                                class="fa-solid fa-caret-left w-[50px]"></i></li>
+                                class="fa-solid fa-caret-left w-[35px] md:w-[50px]"></i></li>
                         <div>
                             <h5 class="text-xl my-2">COST EFFECTIVE</h5>
                             <p class="text-gray-400">Scale economy through decentralization leading to significant
@@ -333,7 +348,7 @@
                     </div>
                     <div class="content  flex">
                         <li class="flex h-[100%] items-center text-6xl text-[#eda839]"><i
-                                class="fa-solid fa-caret-left w-[50px]"></i></li>
+                                class="fa-solid fa-caret-left w-[35px] md:w-[50px]"></i></li>
                         <div>
                             <h5 class="text-xl my-2">
                                 REAL-TIME DATABASE</h5>
@@ -349,7 +364,7 @@
 
     <section class=" p-5 md:p-0">
         <div class="container">
-            <h3 class="text-5xl text-center font-[700]">Tokenomics</h3>
+            <h3 class="text-3xl md:text-5xl text-center font-[700]">Tokenomics</h3>
             <div class="grid gap-5 my-[50px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 
                 <div class="content  tracking-[1px] w-[85%] mx-auto text-center">
@@ -403,9 +418,9 @@
     </section>
 
 
-    <section class="why-choose-us  p-5 md:p-0 my-[120px]">
+    <section class="why-choose-us p-2 sm:p-5 md:p-0 my-[0px] md:my-[120px]">
         <div class="w-[90%] mx-auto">
-            <h4 class="text-4xl">Why Choose Us</h4>
+            <h4 class="text-2xl md:text-4xl">Why Choose Us</h4>
             <div class="grid grid-cols-1 gap-3 sm:grid-cols-1 md:grid-cols-2 mx-auto">
                 <div class="left-content">
                     <div class="my-2 text-gray-400">
@@ -464,7 +479,8 @@
                 </div>
                 <div class="text-center w-[90%]">
                     <span>
-                        <img src="./Images/wolf.jpeg" alt="team" class="rounded-full w-[40%] md:w-[80%] mx-auto p-3 border">
+                        <img src="./Images/wolf.jpeg" alt="team"
+                            class="rounded-full w-[40%] md:w-[80%] mx-auto p-3 border">
                     </span>
                     <h4 class="text-xl my-2 text-[#eda839]">Mark Clustor</h4>
                     <p class="text-gray-400">Market Researcher</p>
@@ -530,6 +546,13 @@
         integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/count-down.js"></script>
+
+    <script>
+        $(".menu-icon").click(function () {
+            $(this).children().toggle(100);
+            $('.menu-area .menu').toggle(100);
+        })
+    </script>
 </body>
 
 </html>
