@@ -359,6 +359,18 @@ nav ul li svg {
 
 
 
+.team-section img {
+    border-radius: 50%;
+    border: 1px solid white;
+    border-right:1px solid #ffb031;
+    border-left:1px solid #ffb031;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
 .Whitepaper-section button {
     width: 33%;
     border-radius: 10px;
