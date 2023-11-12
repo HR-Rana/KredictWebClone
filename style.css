@@ -8,6 +8,10 @@
     --primary: #ffb43c;
 }
 
+html{
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
